@@ -1,0 +1,165 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "fullName": "Ahmed Benali",
+      "password": "Ahmed123",
+      "currency": "USD",
+      "balance": 12550,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC001"
+    },
+    {
+      "id": "2",
+      "fullName": "Sara Alaoui",
+      "password": "Sara456",
+      "currency": "USD",
+      "balance": 8750,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC002"
+    },
+    {
+      "id": "3",
+      "fullName": "Youssef Amrani",
+      "password": "Youssef789",
+      "currency": "USD",
+      "balance": 24300,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC003"
+    },
+    {
+      "id": "4",
+      "fullName": "Nadia El Idrissi",
+      "password": "Nadia321",
+      "currency": "USD",
+      "balance": 6600,
+      "isActive": false,
+      "transactions": [
+        {
+          "transactionId": "34e5a259-3758-46e7-a6a0-98336f1521ee",
+          "transactionType": "deposit",
+          "transactionAmount": 100,
+          "dateTimeTransaction": "2026-10-05T13:30:18.159Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "3569b523-ba6f-4566-8bfc-fd9b50f96a97",
+          "transactionType": "deposit",
+          "transactionAmount": 150,
+          "dateTimeTransaction": "2026-10-05T13:38:23.731Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "dc12f9a4-71b2-4194-9efd-31b036e2016d",
+          "transactionType": "withdraw",
+          "transactionAmount": 5000,
+          "dateTimeTransaction": "2026-10-05T15:59:40.508Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "7513c383-6768-4af1-a18b-38c65c1327be",
+          "transactionType": "transfer",
+          "transactionAmount": 1000,
+          "dateTimeTransaction": "2026-10-05T17:05:25.203Z",
+          "otherAccountNumber": "ACC0010",
+          "transferDirection": "received"
+        }
+      ],
+      "account_number": "ACC004"
+    },
+    {
+      "id": "5",
+      "fullName": "Omar Berrada",
+      "password": "Omar654",
+      "currency": "USD",
+      "balance": 18750,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC005"
+    },
+    {
+      "id": "6",
+      "fullName": "Salma Tazi",
+      "password": "Salma987",
+      "currency": "USD",
+      "balance": 9200,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC006"
+    },
+    {
+      "id": "7",
+      "fullName": "Hamza Chraibi",
+      "password": "Hamza147",
+      "currency": "USD",
+      "balance": 31500,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC007"
+    },
+    {
+      "id": "8",
+      "fullName": "Imane Bennani",
+      "password": "Imane258",
+      "currency": "USD",
+      "balance": 7100,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC008"
+    },
+    {
+      "id": "9",
+      "fullName": "Mehdi Ouazzani",
+      "password": "Mehdi369",
+      "currency": "USD",
+      "balance": 15400,
+      "isActive": false,
+      "transactions": [],
+      "account_number": "ACC009"
+    },
+    {
+      "id": "10",
+      "fullName": "Aya Zahraoui",
+      "password": "Aya753",
+      "currency": "USD",
+      "balance": 3450,
+      "isActive": false,
+      "transactions": [
+        {
+          "transactionId": "34e5a259-3758-46e7-a6a0-98336f1521ee",
+          "transactionType": "deposit",
+          "transactionAmount": 100,
+          "dateTimeTransaction": "2026-10-05T13:30:18.159Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "3569b523-ba6f-4566-8bfc-fd9b50f96a97",
+          "transactionType": "deposit",
+          "transactionAmount": 150,
+          "dateTimeTransaction": "2026-10-05T13:38:23.731Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "dc12f9a4-71b2-4194-9efd-31b036e2016d",
+          "transactionType": "withdraw",
+          "transactionAmount": 5000,
+          "dateTimeTransaction": "2026-10-05T15:59:40.508Z",
+          "transferToRecipient": null
+        },
+        {
+          "transactionId": "6ae6f133-29e0-4b2d-8a03-0497a34ad532",
+          "transactionType": "transfer",
+          "transactionAmount": 1000,
+          "dateTimeTransaction": "2026-10-05T17:05:25.203Z",
+          "otherAccountNumber": "ACC004",
+          "transferDirection": "sent"
+        }
+      ],
+      "account_number": "ACC0010"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
