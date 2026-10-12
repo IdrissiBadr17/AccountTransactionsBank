@@ -7,6 +7,17 @@ function Transactions({ transactions }) {
     transactionFormatDisplay(transaction),
   );
 
+  const isPositive = (tx) => {
+    return (
+      tx.type === "deposit" ||
+      (tx.type === "transfer" && tx.transferDirection === "received")
+    );
+  };
+
+  const sign = (tx) => {
+    return isPositive(tx) ? "+" : "-";
+  };
+
   return (
     <section className="transactions">
       <div className="transactions-header">
@@ -28,18 +39,24 @@ function Transactions({ transactions }) {
                 </div>
                 <div>
                   <h3>{tx.type.charAt(0).toUpperCase() + tx.type.slice(1)}</h3>
-                  <p>{tx.date}</p>
+                  {tx.type !== "transfer" ?
+                    <p>{tx.date}</p>
+                  : <p>
+                      {tx.transferDirection === "sent" ? "To" : "From"} Account:{" "}
+                      {tx.receiver} • {tx.date}
+                    </p>
+                  }
                 </div>
               </div>
               <span
-                className={`amount ${tx.type === "deposit" ? "positive" : "negative"}`}>
-                {tx.type === "deposit" ? "+" : "-"}
+                className={`amount ${isPositive(tx) ? "positive" : "negative"}`}>
+                {sign(tx)}
                 {` $${tx.amount.toFixed(2)}`}
               </span>
             </div>
           ))}
         </div>
-      : <p>No transactions to display.</p>}
+      : ""}
     </section>
   );
 }

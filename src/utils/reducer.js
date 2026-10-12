@@ -30,6 +30,7 @@ export function reducer(state, action) {
         ...state,
         status: "home",
         account: action.payload,
+        errorMessage: "",
       };
 
     case "accountUpdated":

@@ -41,7 +41,10 @@ function App() {
       )}
 
       {status === "create" && (
-        <CreateAccount onBack={() => dispatch({ type: "entryScreen" })} />
+        <CreateAccount
+          onBack={() => dispatch({ type: "entryScreen" })}
+          dispatch={dispatch}
+        />
       )}
 
       {status === "activate" && (

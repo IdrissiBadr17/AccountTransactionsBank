@@ -97,3 +97,32 @@ export async function transferAmountToRecipient(transferRequest) {
     transactions: senderTransactions,
   };
 }
+
+export async function createAccount({ fullName, password }) {
+  const accountNumber = `ACC00${Date.now()}`;
+
+  const newAccount = {
+    fullName,
+    password,
+    account_number: accountNumber,
+    currency: "USD",
+    balance: 0,
+    isActive: false,
+    transactions: [],
+    createdAt: new Date().toISOString(),
+  };
+
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newAccount),
+  });
+
+  if (!response.ok) {
+    throw new Error("Could not create your account. Please try again.");
+  }
+
+  return response.json();
+}

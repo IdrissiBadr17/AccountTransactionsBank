@@ -159,6 +159,26 @@
         }
       ],
       "account_number": "ACC0010"
+    },
+    {
+      "fullName": "dev",
+      "password": "Dev753159",
+      "account_number": "ACC001791556750757",
+      "currency": "USD",
+      "balance": 1000,
+      "isActive": false,
+      "transactions": [
+        {
+          "transactionId": "4f22f4f3-cd09-4173-a062-bd561a13f8f3",
+          "transactionType": "deposit",
+          "transactionAmount": 1000,
+          "dateTimeTransaction": "2026-10-09T14:39:56.888Z",
+          "otherAccountNumber": null,
+          "transferDirection": null
+        }
+      ],
+      "createdAt": "2026-10-09T14:39:10.757Z",
+      "id": "KTwgq_XuvTg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
